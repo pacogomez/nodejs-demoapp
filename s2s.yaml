@@ -1,0 +1,27 @@
+name: s2s
+display-name: Source-to-Service
+desc-short: source-to-service example service
+desc-long: source-to-service example service
+service-icon:
+service-nav-bar-icon:
+org-id: /csp/gateway/am/api/orgs/13538e3b-c368-4f90-b42d-44c200e7615a
+
+internal: false
+gated: false
+
+subscription-status-change-notification-url: http://localhost:8080/sample-app/api/subscription-notifications
+
+service-roles:
+    -  name: s2s:admin
+       display-name: S2S admin role
+       default: False
+       hidden: False
+    -  name: s2s:user
+       display-name: S2S user role
+       default: True
+       hidden: False
+
+service-urls:
+    service-home: http://192.168.99.103:32380
+
+health-check-path: /health
