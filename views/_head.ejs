@@ -16,7 +16,7 @@
           });
           window.appInsights=appInsights;
           appInsights.trackPageView();
-      </script> 
+      </script>
     <% } %>
 
   </head>
@@ -30,24 +30,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand logo" href="/"><img class="navbar-left" src="images/node-icon.png"> &nbsp; Node.js Demo</a>
+          <a class="navbar-brand logo" href="/"><img class="navbar-left" src="images/node-icon.png"> &nbsp; Source-to-Service Demo</a>
         </div>
-    
+
         <div class="navbar-collapse collapse">
           <a class="btn btn-success navbar-btn" href='/info'><i class="fa fa-info-circle"></i>&nbsp; INFO</a>
-          <%if (process.env.WEATHER_API_KEY) { %><a class="btn btn-success navbar-btn" href='/weather'><i class="fa fa-cloud"></i>&nbsp; WEATHER</a><% } %>         
-          <a class="btn btn-success navbar-btn" href='/load'><i class="fa fa-fire"></i>&nbsp; CPU LOAD</a>  
+          <%if (process.env.WEATHER_API_KEY) { %><a class="btn btn-success navbar-btn" href='/weather'><i class="fa fa-cloud"></i>&nbsp; WEATHER</a><% } %>
+          <a class="btn btn-success navbar-btn" href='/load'><i class="fa fa-fire"></i>&nbsp; CPU LOAD</a>
           <%if (process.env.MONGO_CONNSTR) { %><a class="btn btn-success navbar-btn" href='/todo'><i class="fas fa-check-square"></i>&nbsp; TODO</a><% } %>
-          
+
           <div class="nav navbar-nav navbar-right">
             <%if (user) { %><span class="btn btn-disabled navbar-btn"><i class="fa fa-user-circle username"></i>&nbsp; <%= user %></span><% } %>
-          </div>  
+          </div>
 
         </div>
       </div>
     </nav>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
     <div class="container body-content">
